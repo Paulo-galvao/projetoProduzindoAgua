@@ -1,0 +1,386 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Crimson Text', serif;
+}
+body
+{
+    overflow-x: hidden;
+}
+/* *** header *** */
+header
+{
+    height: 75px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    background: rgb(179, 218, 255, 0.6);
+}
+.logo_lagef
+{
+    display: flex;
+    align-items: center;
+}
+.logo_lagef img
+{
+    height: 55px;
+}
+.menu ul
+{
+    height: 75px;
+    display: flex;
+    align-items: center;
+}
+.menu ul li
+{   
+    list-style: none;
+}
+.menu a
+{
+    text-decoration: none; 
+    font-size: 18px;
+    padding: 15px;
+    color: #001a33;
+    transition: 0.3s;
+}
+.menu a:hover
+{
+    background: rgb(179, 218, 255);
+    color: #fff;
+    border-radius: 15px;
+}
+.logo_uepg img
+{
+    height: 75px;
+}
+.mobile-menu
+{
+    height: 75px;
+    cursor: pointer;
+    padding-top: 20px;
+    padding-right: 20px;
+    display: none;
+}
+.mobile-menu .line
+{
+    height: 3px;
+    width: 25px;
+    margin: 6px;
+    border-radius: 15px;
+    background-color: #001a33;
+}
+/*  *** header media-q *** */
+@media (max-width: 800px)
+{
+    .logo_uepg
+    {
+        display: none;
+    }
+    .menu ul
+    {
+        justify-content: space-around;
+        width: 85vw;
+    }
+}
+@media (max-width: 600px)
+{
+    .menu ul
+    {
+        position: absolute;
+        top: 75px;
+        left: 0;
+        flex-direction: column;
+        background-color: rgb(179, 218, 255);
+        height: 60vh;
+        width: 100vw;
+        display: none;
+        
+    }
+    .menu a
+    {
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .mobile-menu
+    {
+        display: block;
+
+    }
+}
+/*  *** main *** */
+main
+{
+    height: 100%;
+    width: 100vw;
+    background: url(../img/pagina_principal/fundo.jpg);
+    background-attachment: fixed;
+    padding-bottom: 30px;   
+}
+.title h1
+{
+    margin: 0 auto;
+    text-align: center;
+    width: 65%;
+    font-size: 25px;
+    padding: 25px;
+}
+.title p
+{
+    font-size: 21px;
+    text-align: center;
+    font-style: italic;
+    padding: 5px;
+}
+.galery
+{
+    width: 90vw;
+    margin: 0 auto;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.galery img
+{
+    border: 15px solid rgb(179, 218, 255, 0.6);
+    border-radius: 10px;
+}
+/* *** media-q *** */
+@media (max-width: 600px)
+{
+    .title h1
+    {
+        font-size: 20px;
+        width: 80vw;
+    }
+    .title p 
+    {
+        font-size: 16px;
+        width: 80vw;
+        margin: 0 auto;
+    }
+    .people
+    {
+        flex-direction: column;
+        text-align: center;
+    }
+    .people-text p
+    {
+        padding-right: 30px;
+    }
+}
+.text
+{
+    width: 80vw;
+    margin: 0 auto;
+}
+.text h1
+{
+    text-align: center;
+    font-size: 26px;
+    padding: 30px 0;
+}
+.text p
+{
+    text-align: justify;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+}
+.text ul
+{
+    padding: 10px 20px;
+}
+.text ul li
+{
+    text-align: justify;
+    font-size: 20px;
+    padding: 3px 0;
+    letter-spacing: 0.5px;
+}
+.date
+{
+    padding: 25px 0;
+    text-align: center;
+    font-size: 26px;
+}
+.people
+{
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    
+    padding: 30px 0;
+    
+}
+.people-text p
+{
+    text-align: justify;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    padding-top: 10px;
+    padding-left: 30px;
+}
+.people img
+{
+    border: 8px solid rgb(179, 218, 255, 0.6);
+    border-radius: 5px;
+}
+
+.gl
+{
+    width: 90%;
+    margin: 0 auto;
+}
+.gl-uepg
+{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+.gl-uepg img
+{
+    width: 550px;
+    border: 8px solid rgb(179, 218, 255, 0.6);
+    border-radius: 5px;
+}
+.gl-bber
+{
+    display: flex;
+    flex-direction: column;
+}
+.gl-bber a
+{
+    width: 500px;
+    border: 8px solid rgb(179, 218, 255, 0.6);
+    border-radius: 5px;
+    margin: 10px auto;;
+}
+.gl .gl-sample
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.gl-sample img
+{
+    border: 8px solid rgb(179, 218, 255, 0.6);
+    border-radius: 5px;
+}
+.gl-ita
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.gl-ita img
+{
+    border: 8px solid rgb(179, 218, 255, 0.6);
+    border-radius: 5px;
+}
+.gl-ita-1
+{
+    width: 80%;
+    margin: 0 auto;
+}
+.gl-ita-1 img
+{
+    border: 8px solid rgb(179, 218, 255, 0.6);
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.container
+{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container p
+{
+    font-size: 21px;
+    letter-spacing: 0.5px;
+}
+@media (max-width:600px)
+{      
+    .gl img{
+        width: 100%;
+        border: none;
+        border-radius: 5px;
+    }
+    .gl-uepg{
+        flex-direction: column; 
+        
+    }
+    .gl-bber a{
+        border: none;
+        width: 100%;
+    }
+    .gl .gl-sample a{
+        width: 50%;
+    }
+    
+    .gl-ita a{
+        border: none;
+        width: 48%;
+    }
+    .gl-ita-1{
+        width: 100%;
+    }
+    .direction{
+        
+        flex-direction: column;
+        width: 100%;
+    }
+    .direction a{
+        width: 100%;
+    }
+    .container p{
+        width: 80vw;
+        text-align: center;
+    }
+}
+
+/* *** footer *** */
+.foot
+{
+    height: 60px;
+    background: rgb(179, 218, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo-ugf img
+{
+    height: 30px;
+}
+.foot-text
+{
+    padding-left: 15px;
+    padding-right: 5px;
+}
+.git img
+{
+    height: 20px;
+}
+@media (max-width:600px)
+{
+    .foot
+    {
+        flex-direction: column;
+        height: 150px;
+    }
+    .logo-ugf img
+    {
+        height: 40px;
+    }
+    .foot-text
+    {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        width: 80%;
+        text-align: center;
+    }
+}
